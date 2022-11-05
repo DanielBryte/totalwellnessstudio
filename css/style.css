@@ -86,6 +86,17 @@ section h3{
 }
 
 
+/***** Gallery *****/
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gallery img{
+    width: 550px;
+    border-radius: 1rem;
+}
+
 /***** Contact *****/
 
 
