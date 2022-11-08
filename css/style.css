@@ -36,6 +36,40 @@ section h3 {
   text-align: center;
 }
 
+/***** Header ******/
+header{
+  margin-top: 1rem;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header li a {
+  color: black;
+  font-weight: 600;
+  padding-left: 1.5rem;
+}
+
+li {
+  display: inline;
+}
+
+
+.button{
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  color: white;
+  white-space: nowrap;
+  
+}
+
+
 /***** Hero *****/
 
 .hero {
@@ -48,6 +82,7 @@ section h3 {
   font-size: 3rem;
   font-weight: 700;
   max-width: 300px;
+  line-height: 56px;
   margin-bottom: 3rem;
 }
 .hero img {
