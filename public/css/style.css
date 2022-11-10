@@ -39,6 +39,7 @@ section h3 {
 /***** Hero *****/
 
 .hero {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -161,15 +162,18 @@ section h3 {
   gap: 2rem;
 }
 
- .bottom {
+.bottom {
 width: 100%;
   margin-top: 3rem;
   background-color: var(--primary);
   padding: 0 !important;
 }
+.bottom h1{
+  padding-top: 2rem;
+}
 .bottom h4 {
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
   color: white;
 }
 /***** Media Queries ******/
