@@ -20,7 +20,7 @@ header,
 section {
   padding: 0 1.5rem;
 }
-section{
+section {
   margin: 3rem 0;
 }
 
@@ -31,7 +31,8 @@ section{
 .space-top {
   padding-top: 1rem;
 }
-h1, span {
+h1,
+span {
   color: var(--primary);
 }
 h3 {
@@ -40,9 +41,6 @@ h3 {
   margin: 5rem 0;
   text-align: center;
 }
-
-
-
 /***** Header ******/
 header {
   width: 100%;
@@ -57,7 +55,8 @@ header {
   align-items: center;
 }
 
-.ham-menu, .drop-menu {
+.ham-menu,
+.drop-menu {
   display: none;
 }
 
@@ -105,8 +104,9 @@ li {
   color: white;
   white-space: nowrap;
 }
-.button:hover, .contact input[type="submit"]:hover {
-background-color: #e23993;
+.button:hover,
+.contact input[type="submit"]:hover {
+  background-color: #e23993;
 }
 
 /***** Hero *****/
@@ -155,7 +155,7 @@ background-color: #e23993;
   border-radius: 100%;
   max-width: 350px;
 }
-.white{
+.white {
   background-color: var(--primary);
   color: #ffffff;
   border-radius: 10px;
@@ -225,6 +225,26 @@ background-color: #e23993;
   font-size: 1rem;
   font-weight: 700;
 }
+.contact .or{
+  margin: 2rem 0;
+  font-size: 1.8rem
+}
+
+.contact .book-whatsapp>a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 12px;
+  height: 50px;
+  background-color: #5ffc7b;
+}
+.contact .book-whatsapp>a:hover{
+background-color: #50eb6c;
+}
 
 /***** Footer *****/
 .footer {
@@ -248,11 +268,11 @@ background-color: #e23993;
 .footer .middle {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 2.1rem;
 }
 .footer .middle div {
   flex: 1 1 100%;
-  text-align: start;
 }
 
 .bottom {
@@ -268,17 +288,17 @@ background-color: #e23993;
   text-align: center;
   color: white;
 }
-.wa-wrapper{
+.wa-wrapper {
   display: block;
 }
-.whatsapp{
+.whatsapp {
   position: sticky;
   left: 0px;
   right: 16px;
   bottom: 16px;
 }
-.back-top{
-  background-color:#5FFC7B;
+.sticky {
+  background-color: #5ffc7b;
   position: absolute;
   right: 16px;
   bottom: 16px;
@@ -288,8 +308,6 @@ background-color: #e23993;
   font-size: 1rem;
   padding: 0.4rem;
 }
-
-
 
 /***** Media Queries ******/
 /***** Media Queries ******/
@@ -303,7 +321,7 @@ background-color: #e23993;
   .service img {
     max-width: 300px;
   }
-  .hero{
+  .hero {
     margin-top: -6rem;
   }
   .hero h2 {
@@ -360,7 +378,7 @@ background-color: #e23993;
   .desktop {
     display: none;
   }
- 
+
   .hero {
     flex-wrap: wrap;
   }
@@ -376,7 +394,6 @@ background-color: #e23993;
     text-align: left;
   }
 }
-
 /* @media (max-width: 800px) {
   .hero div img {
     max-width: 500px;
