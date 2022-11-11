@@ -2,158 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your fitness website">
-    <title>Total Wellness Studio</title>
-
-    <!------ CSS ------>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your fitness website">
+  <title>Total Wellness Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="header">
+  <header>
+    <nav class="container">
+      <div class="title">
         <h1>Total Wellness Studio</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a class="button" href="#">Book Now</a>
-    </header>
-
-    <section class="hero" id="hero">
-        <div>
-            <h2>Get the best looks, spa and body care services</h2>
-            <a class="button" href="#">Book Now</a>
-        </div>
-
-        <div>
-            <img src="assets/hero-image.png" alt="hero-image">
-        </div>
-    </section>
-
-
-bootstrap
-
-
-  <!-- ***** Header Area Start 
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-   
-            <a href="index.html" class="logo">
-              <h4>Spac<span>Dyna</span></h4>
-            </a>
-     
-
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-          </nav>
-        </div>
       </div>
-    </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <a class="button desktop" href="#">Book Now</a>
+
+        <div class="ham-menu">
+            <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </nav>
   </header>
+        <nav class="drop-menu">
+          <div><a href="">HOME</a></div>
+          <div><a href="">PROGRAMS</a></div>
+          <div><a href="">CONTACT</a></div>
+        </nav>
+  
+  
 
-  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Welcome to Space Dynamic</h6>
-                <h2>We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing</h2>
-                <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p>
-                <form id="search" action="#" method="GET">
-                  <fieldset>
-                    <input type="address" name="address" class="email" placeholder="Your website URL..." autocomplete="on" required>
-                  </fieldset>
-                  <fieldset>
-                    <button type="submit" class="main-button">Analyze Site</button>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="assets/images/banner-right-image.png" alt="team meeting">
-              </div>
-            </div>
-          </div>
-        </div>
+  <section id="hero">
+    <div class="hero">
+      <div class="left">
+        <h2>Get the best looks, spa and body care services</h2>
+        <a class="button" href="#">Book Now</a>
+      </div>
+
+      <div class="right">
+        <img src="assets/hero-image.png" alt="hero-image">
       </div>
     </div>
-  </div> -->
+  </section>
 
 
 
 
 
+  <section class="programs section-margin" id="programs">
+    <h3>Exclusive <span>Spa</span> Programs</h3>
+    <div class="services-wrap">
+      <li class="service">
+        <img src="assets/programs/massage.png" alt="massage">
+        <h1>Massage</h1>
+      </li>
 
-    <section class="programs" id="programs">
-        <h3>Exclusive <span>Spa</span> Programs</h3>
-        <div class="services-wrap">
-            <li class="service">
-                <img src="assets/programs/massage.png" alt="massage">
-                <h1>Massage</h1>
-            </li>
+      <li class="service">
+        <img src="assets/programs/facial.png" alt="facials">
+        <h1>Facials</h1>
+      </li>
+      <li class="service">
+        <img src="assets/programs/steam-bath.png" alt="steam-bath">
+        <h1>Steam Bath</h1>
+      </li>
+      <li class="service">
+        <img src="assets/programs/waxing.png" alt="waxing">
+        <h1>Waxing</h1>
+      </li>
 
-            <li class="service">
-                <img src="assets/programs/facial.png" alt="facials">
-                <h1>Facials</h1>
-            </li>
-            <li class="service">
-                <img src="assets/programs/steam-bath.png" alt="steam-bath">
-                <h1>Steam Bath</h1>
-            </li>
-            <li class="service">
-                <img src="assets/programs/waxing.png" alt="waxing">
-                <h1>Waxing</h1>
-            </li>
+      <li class="service">
+        <img src="assets/programs/bodypolish.png" alt="bodypolish">
+        <h1>Body Polish</h1>
+      </li>
+      <li class="service">
+        <img src="assets/programs/manicure.png" alt="manicure">
+        <h1>Manicure and pedicure</h1>
+      </li>
 
-            <li class="service">
-                <img src="assets/programs/bodypolish.png" alt="bodypolish">
-                <h1>Body Polish</h1>
-            </li>
-            <li class="service">
-                <img src="assets/programs/manicure.png" alt="manicure">
-                <h1>Manicure and pedicure</h1>
-            </li>
+    </div>
 
-        </div>
+    <h2>and <span>more</span></h2>
 
-        <h2>and <span>more</span></h2>
-
-        </div>
-    </section>
-
+    </div>
+  </section>
 
 
 
-    <section>
+
+  <!-- <section>
         <h3>Explore <span>Our Gallery</span></h3>
 
         <div class="gallery">
@@ -162,135 +110,72 @@ bootstrap
             <h3>Explore <span>Now</span><span>-></span></h3>
 
         </div>
-    </section>
+    </section> -->
 
 
-    <section>
-        <h3>Book<span> a session </span></h3>
-        <div class="contact">
-            <div>
-                <h3>Get in touch with us to book a session, make enquiries, or contact the team
-                </h3>
-            </div>
+  <section class="section-margin">
+    <h3>Book<span> a session </span></h3>
+    <div class="contact">
+      <div class="left">
+        <h3>Get in touch with us to book a session, make enquiries, or contact the team
+        </h3>
+      </div>
 
-            <div class="form">
-                <h2>Contact Us</h2>
-                <form action="" id="contact">
-                    <input type="text" name="" id="full name" placeholder="Your full name"><br>
-                    <input type="email" name="" id="email" placeholder="Your email address"><br>
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea><br>
+      <div class="form">
+        <h2>Contact Us</h2>
+        <form action="" id="contact">
+          <input type="text" name="" id="full name" placeholder="Your full name"><br>
+          <input type="email" name="" id="email" placeholder="Your email address"><br>
+          <textarea name="" id="message" cols="30" rows="10" placeholder="Your message"></textarea><br>
 
-                    <input type="submit" value="SEND">
-                </form>
-            </div>
-        </div>
-    </section>
+          <input type="submit" value="SEND">
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <footer class="footer">
-        <div class="top">
-            <h1>Total Wellness Studio</h1>
-            <h4>Achieving Total Body Wellness</h4>
-        </div>
-
-        <div class="middle">
-            <div class="contacts">
-                <h1>Contact</h1>
-                <h4>Address:</h4>
-                <p>34 Ajayi Aina Street Ifako, Gbagada. Beside UBA. Opposite Shopcity, Lagos, Nigeria.</p>
-
-                <h4>Phone:</h4>
-                <p>+234 702-5514-843</p>
-            </div>
-
-            <div>
-                <h1>Availability</h1>
-                <h4>Mondays-Saturdays 9am-8pm</h4>
-                <h4>Sundays 12pm-6pm.</h4>
-            </div>
-
-            <div>
-                <h1>Social Platforms</h1>
-                <h4>Facebook</h4>
-                <h4>Twitter</h4>
-                <h4>Instagram</h4>
-            </div>
-
-        </div>
-
-
-    </footer>
-    <div class="bottom">
-        <h4>2022 All Rights Reserved. Designed by TechGruv</h4>
+  <footer class="footer">
+    <div class="top">
+      <h1>Total Wellness Studio</h1>
+      <h4>Achieving Total Body Wellness</h4>
     </div>
 
-    <script src="script.js"></script>
+    <div class="middle">
+      <div class="contacts">
+        <h1>Contact</h1>
+        <h4>Address:</h4>
+        <p>34 Ajayi Aina Street Ifako, Gbagada. Beside UBA. Opposite Shopcity, Lagos.</p>
+
+        <h4 class="space-top">Phone:</h4>
+        <p>+234 702-5514-843</p>
+      </div>
+
+      <div>
+        <h1>Availability</h1>
+        <h4>Mondays-Saturdays 9am-8pm</h4>
+        <h4 class="space-top">Sundays 12pm-6pm.</h4>
+      </div>
+
+      <div>
+        <h1>Socials</h1>
+          <h4> <a href="https://www.instagram.com/totalwellnessstudiong/">Instagram</a></h4>
+         
+        <h4 class="space-top">Twitter</h4>
+
+          <h4 class="space-top"><a href="https://m.facebook.com/people/Total-Wellness-Studio/100077191585279/">Facebook</a></h4>
+        
+      </div>
+
+    </div>
+
+
+  </footer>
+  <div class="bottom">
+    <h4>2022 All Rights Reserved. Designed by TechGruv</h4>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 
 </html>
-
-
-
-
-<!-- 
-<div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
-            <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
-                </fieldset>
-              </div>
-            </div>
-            <div class="contact-dec">
-              <img src="assets/images/contact-decoration.png" alt="">
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>© Copyright 2021 Space Dynamic Co. All Rights Reserved. 
-          
-          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
-        </div>
-      </div>
-    </div>
-  </footer> -->

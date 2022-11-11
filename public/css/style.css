@@ -7,18 +7,29 @@
   text-decoration: none;
   font-family: "Cabin", sans-serif;
 }
-
+a {
+  color: black;
+}
 body {
-  max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 1rem;
 }
+header,
+section {
+  padding: 0 1.5rem;
+  margin: 5rem 0;
+}
+
 :root {
   --primary: #ff1493;
   --space: 2rem;
 }
-
+.space-top {
+  padding-top: 1rem;
+}
+.space-top {
+  padding-top: 1rem;
+}
 h1 {
   color: var(--primary);
 }
@@ -29,51 +40,117 @@ h3 {
 span {
   color: var(--primary);
 }
-section {
-  margin: 5rem 0;
-}
+
 section h3 {
   text-align: center;
 }
 
 /***** Header ******/
-header{
-  margin-top: 1rem;
+header {
+  width: 100%;
+  color: var(--primary);
+  margin-bottom: -05px;
 }
 
-.header{
+.container {
+  margin: 0 auto;
+  padding: 1rem 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.header li a {
-  color: black;
-  font-weight: 600;
-  padding-left: 1.5rem;
+.ham-menu, .drop-menu {
+  display: none;
 }
+
+.ham-menu div {
+  height: 4px;
+  width: 30px;
+  margin: 5px 0;
+  background-color: var(--primary);
+  transition: 1s ease;
+}
+
+.ham-menu .top {
+  transform: rotateZ(410deg) translate(-5%, 100%);
+  margin: 0;
+  transition: 1s ease;
+}
+.ham-menu .bottom {
+  transform: rotateZ(-410deg) translate(-5%, -100%);
+  margin: 0;
+  transition: 1s ease;
+}
+.ham-menu .mid {
+  transform: rotateZ(360deg);
+  display: none;
+  transition: 1s ease;
+}
+
+.title {
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 12px;
+}
+
+
+@media (max-width: 800px) {
+  header {
+    color: var(--primary);
+    width: 100%;
+  }
+
+  .container {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 8px;
+  }
+
+}
+
 
 li {
   display: inline;
 }
 
-
-.button{
+.button {
   font-size: 1.2rem;
   background-color: var(--primary);
   border-radius: 15px;
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.4rem;
   color: white;
   white-space: nowrap;
-  
 }
+
+
 
 
 /***** Hero *****/
 
 .hero {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +163,7 @@ li {
   line-height: 56px;
   margin-bottom: 3rem;
 }
-.hero img {
+.hero .right img {
   max-width: 700px;
 }
 
@@ -142,12 +219,14 @@ li {
 /***** Contact *****/
 .contact {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 3rem;
 }
 .contact div {
   flex: 1;
 }
 .contact h3 {
+  font-size: 2rem;
   text-align: left;
 }
 .contact h2 {
@@ -156,6 +235,7 @@ li {
 }
 .contact input,
 .contact textarea {
+  padding: 1rem;
   margin-top: 2rem;
   border-radius: 0.5rem;
   width: 100%;
@@ -168,6 +248,7 @@ li {
   color: white;
 }
 .contact input[type="submit"] {
+  padding: 0px;
   width: 120px;
   display: block;
   background-color: var(--primary);
@@ -177,7 +258,24 @@ li {
 }
 
 /***** Footer *****/
+.footer {
+  padding: 2rem 1rem;
+  position: relative;
+}
 
+footer::before {
+  content: "";
+  background-image: url("/public/assets/resources/bg-footer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
 .footer .top {
   display: flex;
   justify-content: center;
@@ -194,40 +292,127 @@ li {
 .footer .middle {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 2.1rem;
+}
+.footer .middle div {
+  flex: 1 1 100%;
+  text-align: start;
 }
 
 .bottom {
-width: 100%;
-  margin-top: 3rem;
+  width: 100%;
   background-color: var(--primary);
-  padding: 0 !important;
 }
-.bottom h1{
-  padding-top: 2rem;
-}
+
 .bottom h4 {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-align: center;
-  padding-top: 10px;
   color: white;
 }
+
+/***** Media Queries ******/
 /***** Media Queries ******/
 @media (max-width: 600px) {
   h1 {
     font-size: 1.5rem;
   }
-  nav,
-  header a {
+  .services {
+    flex-direction: column;
+  }
+  .service img {
+    max-width: 300px;
+  }
+  .hero h2 {
+    font-size: 2.8rem;
+  }
+  .hero div img {
+    margin-top: 6rem;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 769px) and (max-width: 1024px) {
+  /* Header */
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
     display: none;
   }
+  .ham-menu {
+    display: block;
+  }
+
+  .drop-menu {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    transition: 1s cubic-bezier(0.9, -0.14, 0, 1.15);
+    transform: translateY(-100%);
+    list-style-position: inside;
+  }
+
+  .drop-down {
+    transform: translateY(0%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .drop-menu div {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    border: none;
+    letter-spacing: 2px;
+  }
+
+  .drop-menu div a {
+    color: var(--primary);
+    transition: 0.5s ease;
+  }
+  /* Header */
+
+  .desktop {
+    display: none;
+  }
+ 
   .hero {
     flex-wrap: wrap;
   }
-  .hero img {
-    margin-top: 3.5rem;
-    max-width: 450px;
+  .footer .middle {
+    display: block;
   }
-  .services {
-    flex-direction: column;
+  .contact {
+    flex-wrap: wrap;
+    width: 100%;
+    display: block;
+  }
+  .contact h3 {
+    text-align: left;
+  }
+  .hero div img {
+    margin-top: 6rem;
+  }
+}
+
+/* @media (max-width: 800px) {
+  .hero div img {
+    max-width: 500px;
+  }
+} */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .hero div img {
+    max-width: 600px;
   }
 }
