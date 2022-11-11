@@ -1,10 +1,12 @@
 *,
-::after,
-::before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  position: relative;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
   font-family: "Cabin", sans-serif;
 }
 a {
@@ -17,7 +19,9 @@ body {
 header,
 section {
   padding: 0 1.5rem;
-  margin: 5rem 0;
+}
+section{
+  margin: 3rem 0;
 }
 
 :root {
@@ -27,29 +31,22 @@ section {
 .space-top {
   padding-top: 1rem;
 }
-.space-top {
-  padding-top: 1rem;
-}
-h1 {
+h1, span {
   color: var(--primary);
 }
 h3 {
+  font-weight: 600;
   font-size: 2.2rem;
   margin: 5rem 0;
-}
-span {
-  color: var(--primary);
-}
-
-section h3 {
   text-align: center;
 }
+
+
 
 /***** Header ******/
 header {
   width: 100%;
   color: var(--primary);
-  margin-bottom: -05px;
 }
 
 .container {
@@ -89,50 +86,14 @@ header {
 }
 
 .title {
-  letter-spacing: 2px;
-  word-spacing: 2px;
-}
-
-ul {
-  display: flex;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }
 
 li {
+  font-size: 1.1rem;
+  font-weight: 500;
   margin: 0 12px;
-}
-
-
-@media (max-width: 800px) {
-  header {
-    color: var(--primary);
-    width: 100%;
-  }
-
-  .container {
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .title {
-    letter-spacing: 2px;
-    word-spacing: 2px;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    margin: 0 8px;
-  }
-
-}
-
-
-li {
   display: inline;
 }
 
@@ -144,9 +105,9 @@ li {
   color: white;
   white-space: nowrap;
 }
-
-
-
+.button:hover, .contact input[type="submit"]:hover {
+background-color: #e23993;
+}
 
 /***** Hero *****/
 
@@ -194,15 +155,21 @@ li {
   border-radius: 100%;
   max-width: 350px;
 }
-
+.white{
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 0.2rem 0.4rem;
+}
 .service h1 {
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .programs h2 {
   text-align: center;
   margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 /***** Gallery *****/
@@ -225,13 +192,15 @@ li {
 .contact div {
   flex: 1;
 }
-.contact h3 {
+.contact h4 {
+  margin: 4rem 0;
   font-size: 2rem;
+  font-weight: 600;
   text-align: left;
 }
 .contact h2 {
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 .contact input,
 .contact textarea {
@@ -259,23 +228,10 @@ li {
 
 /***** Footer *****/
 .footer {
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
   position: relative;
 }
 
-footer::before {
-  content: "";
-  background-image: url("/public/assets/resources/bg-footer.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}
 .footer .top {
   display: flex;
   justify-content: center;
@@ -312,6 +268,28 @@ footer::before {
   text-align: center;
   color: white;
 }
+.wa-wrapper{
+  display: block;
+}
+.whatsapp{
+  position: sticky;
+  left: 0px;
+  right: 16px;
+  bottom: 16px;
+}
+.back-top{
+  background-color:#5FFC7B;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  height: 50px;
+  width: 50px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+
+
 
 /***** Media Queries ******/
 /***** Media Queries ******/
@@ -324,6 +302,9 @@ footer::before {
   }
   .service img {
     max-width: 300px;
+  }
+  .hero{
+    margin-top: -6rem;
   }
   .hero h2 {
     font-size: 2.8rem;
@@ -338,14 +319,6 @@ footer::before {
 @media (max-width: 769px) and (max-width: 1024px) {
   /* Header */
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   ul {
     display: none;
   }
@@ -354,13 +327,13 @@ footer::before {
   }
 
   .drop-menu {
+    background-color: #ffffff;
+    z-index: 1 !important;
     position: relative;
-    z-index: -1;
     display: flex;
     flex-direction: column;
     transition: 1s cubic-bezier(0.9, -0.14, 0, 1.15);
-    transform: translateY(-100%);
-    list-style-position: inside;
+    transform: translateY(-150%);
   }
 
   .drop-down {
@@ -370,6 +343,7 @@ footer::before {
 
   .drop-menu div {
     width: 100%;
+    font-weight: 500;
     text-align: center;
     padding: 10px 20px;
     transition: 0.5s ease;
@@ -400,9 +374,6 @@ footer::before {
   }
   .contact h3 {
     text-align: left;
-  }
-  .hero div img {
-    margin-top: 6rem;
   }
 }
 
