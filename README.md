@@ -1,6 +1,6 @@
 # Total Wellness Studio Landing Page
 
-## A fitness website
+## A Spa website
 
 #### Using HTML, CSS, JS.
 
