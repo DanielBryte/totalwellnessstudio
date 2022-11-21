@@ -207,10 +207,17 @@ flex: 1 1 100%
   flex: 1;
 }
 .contact h4 {
-  margin: 4rem 0;
+  margin: auto 0;
+  max-width: 500px;
   font-size: 2rem;
   font-weight: 600;
   text-align: left;
+}
+.contact p{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
 }
 .contact h2 {
   text-align: center;
@@ -244,22 +251,38 @@ flex: 1 1 100%
   font-size: 1.8rem
 }
 
+.contact .book-whatsapp{
+  display: flex;
+  width: 100%;
+}
 .contact .book-whatsapp>a{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: inherit;
   font-size: 1.2rem;
   font-weight: 700;
   border-radius: 12px;
   height: 50px;
   background-color: #5ffc7b;
 }
-.contact .book-whatsapp>a:hover{
+.contact .book-whatsapp>.whatsapp:hover{
 background-color: #50eb6c;
 }
+.contact .book-whatsapp .whatsapp{
+  margin-right: 1rem;
+}
 
+
+.contact .book-whatsapp>.calendly{
+  background-color: #0067ff;
+  }
+  .contact .book-whatsapp .calendly:hover{
+    background-color: #2074f1;
+  }
+  
 /***** Footer *****/
 .footer {
   padding: 2.5rem 1rem;
